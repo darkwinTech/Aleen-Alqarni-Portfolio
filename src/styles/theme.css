@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Design tokens. Light theme is the default; [data-theme="dark"] overrides.
+   Accent = teal/emerald. Headings = Manrope. Body = DM Sans.
+   Labels/tags/meta = IBM Plex Mono.
+   ========================================================================== */
+
+:root {
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --bg: #ffffff;
+  --bg-alt: #f4f6f5;
+  --bg-raised: #ffffff;
+  --bg-raised-hover: #ffffff;
+  --text: #121512;
+  --text-muted: #565f5a;
+  --border: #e2e6e3;
+  --border-strong: #c7cec9;
+
+  --accent: #0f766e;
+  --accent-strong: #0b5d56;
+  --accent-contrast: #ffffff;
+  --accent-bg: rgba(15, 118, 110, 0.08);
+  --accent-border: rgba(15, 118, 110, 0.35);
+
+  --shadow: 0 10px 30px -12px rgba(18, 21, 18, 0.18);
+  --shadow-sm: 0 4px 12px -4px rgba(18, 21, 18, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --max-width: 1080px;
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #0a0f0d;
+  --bg-alt: #111814;
+  --bg-raised: #131b17;
+  --bg-raised-hover: #17201b;
+  --text: #eaf0ec;
+  --text-muted: #93a19a;
+  --border: #1f2a24;
+  --border-strong: #2c3a32;
+
+  --accent: #34d399;
+  --accent-strong: #6ee7b7;
+  --accent-contrast: #06120d;
+  --accent-bg: rgba(52, 211, 153, 0.12);
+  --accent-border: rgba(52, 211, 153, 0.35);
+
+  --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text);
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
