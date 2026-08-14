@@ -190,7 +190,7 @@ export const projects = [
       'Uncovered crashes and security vulnerabilities in bzip2 by conducting automated, coverage-guided fuzz testing with AFL++ and AddressSanitizer.',
     caseStudy: false,
     demoUrl: '',
-    repoUrl: '',
+    repoUrl: 'https://github.com/Wajza/bzip2-fuzzing-project',
   },
   {
     slug: 'asmo-driver-portal',
