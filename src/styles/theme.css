@@ -1,7 +1,8 @@
 /* ==========================================================================
    Design tokens. Light theme is the default; [data-theme="dark"] overrides.
-   Accent = teal/emerald. Headings = Manrope. Body = DM Sans.
-   Labels/tags/meta = IBM Plex Mono.
+   Light theme palette = "Jade pebble morning" (#7B9669 / #E6E6E6 / #404E3B /
+   #6C8480 / #BAC8B1). Accent = sage green (light) / emerald (dark).
+   Headings = Manrope. Body = DM Sans. Labels/tags/meta = IBM Plex Mono.
    ========================================================================== */
 
 :root {
@@ -9,23 +10,23 @@
   --font-body: 'DM Sans', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  --bg: #ffffff;
-  --bg-alt: #f4f6f5;
+  --bg: #e6e6e6;
+  --bg-alt: #ffffff;
   --bg-raised: #ffffff;
-  --bg-raised-hover: #ffffff;
-  --text: #121512;
-  --text-muted: #565f5a;
-  --border: #e2e6e3;
-  --border-strong: #c7cec9;
+  --bg-raised-hover: #f2f4ef;
+  --text: #404e3b;
+  --text-muted: #6c8480;
+  --border: #c3cbc9;
+  --border-strong: #6c8480;
 
-  --accent: #0f766e;
-  --accent-strong: #0b5d56;
+  --accent: #7b9669;
+  --accent-strong: #404e3b;
   --accent-contrast: #ffffff;
-  --accent-bg: rgba(15, 118, 110, 0.08);
-  --accent-border: rgba(15, 118, 110, 0.35);
+  --accent-bg: rgba(123, 150, 105, 0.1);
+  --accent-border: rgba(123, 150, 105, 0.35);
 
-  --shadow: 0 10px 30px -12px rgba(18, 21, 18, 0.18);
-  --shadow-sm: 0 4px 12px -4px rgba(18, 21, 18, 0.12);
+  --shadow: 0 10px 30px -12px rgba(64, 78, 59, 0.2);
+  --shadow-sm: 0 4px 12px -4px rgba(64, 78, 59, 0.14);
 
   --radius-sm: 6px;
   --radius-md: 12px;
